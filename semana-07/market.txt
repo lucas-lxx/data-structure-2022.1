@@ -1,0 +1,25 @@
+Felipe foi ao novo supermercado de Quixadá chamado QSuper com uma sacola na mão. Ele descobriu que esse supermercado tinha apenas duas seções de produtos e ele queria pegar produtos P da primeira seção e produtos Q da segunda seção. Como o Felipe é econômico, ele queria encher a sacola gastando o mínimo possível. Se dois produtos têm o mesmo preço, Felipe escolhe o produto que vem primeiro na ordem alfabética.
+
+Dados N produtos com seus preços da primeira seção e M produtos com seus preços da segunda seção, ajude Felipe a escolher esses produtos. Imprima os nomes dos produtos na ordem em que Eles foram escolhidos.
+
+Entrada:
+
+A primeira linha da entrada contém quatro inteiros separados por espaço N, M, P e Q.
+As próximas N linhas contêm uma string (contém letras minúsculas) e um número inteiro separado por um espaço.
+As próximas M linhas contêm uma string (contém letras minúsculas) e um número inteiro separado por um espaço.
+Saída:
+
+Imprima os nomes dos produtos na ordem que eles escolhidos.
+
+Exemplo de Entrada
+
+3 3 1 2
+bolo 10
+miojo 50
+macarrao 30
+arroz 10
+manteiga 30
+pao 30
+Exemplo de Saída
+
+arroz bolo manteiga
