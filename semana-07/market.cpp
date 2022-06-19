@@ -112,12 +112,10 @@ int main() {
     cin >> q;
 
     // first isle
-    vector<Product> ip;
-    ip.resize(n);
+    vector<Product> ip(n);
     gline(ip, n);
     //second isle
-    vector<Product> iq;
-    iq.resize(m);
+    vector<Product> iq(m);
     gline(iq, m);
 
     merge_sort(ip, 0, n-1);
