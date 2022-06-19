@@ -2,7 +2,6 @@
 #define DISJUNTOS_HPP
 
 #include <iostream>
-#include <vector>
 #include <unordered_map>
 
 using namespace std;
@@ -10,7 +9,7 @@ using namespace std;
 class Disjuntos{
 private:
     int last;
-    unordered_map<vector<int>, int> dis;
+    unordered_map<int, int> dis;
 
     static int to_negative(int n) { return n < 0 ? n:n * -1; }
 public:
@@ -21,9 +20,9 @@ public:
 
     int une(int x, int y){
         if (dis.find(x) != dis.end()) {
-            dis[x] = une(dis.at(x), y);
+            return dis[x] = une(dis.at(x), y);
         } else if (dis.find(y) != dis.end()) {
-            dis[y] = une(x, dis.at(y));
+            return dis[y] = une(x, dis.at(y));
         } else {
             dis[x] = last;
             dis[y] = last;
