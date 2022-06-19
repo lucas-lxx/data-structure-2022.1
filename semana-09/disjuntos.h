@@ -11,7 +11,6 @@ private:
     int last;
     unordered_map<int, int> dis;
 
-    static int to_negative(int n) { return n < 0 ? n:n * -1; }
 public:
     
     Disjuntos(int n) { 
@@ -28,13 +27,6 @@ public:
             dis[y] = last;
             return last++;
         }
-        return -1;
-    }
-
-    void print_map() {
-        for (auto i:dis) 
-            cout << i.first << ": " << i.second << ", ";
-        cout << '\n';
     }
 
     int mesmo(int x, int y){

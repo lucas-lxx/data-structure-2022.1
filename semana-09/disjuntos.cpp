@@ -3,7 +3,6 @@
 
 int main() {
     Disjuntos D(5);
-
     cout << D.mesmo(0,1) << endl; // 0
     cout << D.mesmo(1,2) << endl; // 0
     cout << D.mesmo(2,3) << endl; // 0
@@ -13,7 +12,6 @@ int main() {
     
     D.une(0,4);
     D.une(0,1);
-    D.print_map();
 
     cout << D.mesmo(0,1) << endl; // 1
     cout << D.mesmo(1,2) << endl; // 0
